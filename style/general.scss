@@ -1,0 +1,378 @@
+@import 'variable.scss';
+
+
+
+.section_layout {
+    background-color: $black;
+    position: relative;
+    z-index: 100;
+    min-height: 100vh;
+    padding: 80px 0;
+
+    .subtitle_section {
+        font-size: 1.7rem;
+        padding-left: 20px;
+        position: relative;
+
+        @media (max-width:600px) {
+            font-size: 1rem;
+        }
+
+        @media (min-width:1024px) {
+            max-width: 70%;
+        }
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 10px;
+            background: $primary;
+            position: absolute;
+            left: 0;
+
+        }
+    }
+
+    .body_content {
+        margin: 50px 0;
+        z-index: 101;
+        position: relative;
+
+        h4 {
+            color: $white;
+        }
+    }
+
+    .title_section {
+        font-size: 5rem;
+        word-spacing: -5px;
+        color: $white;
+        margin: 30px 0;
+
+        @media (max-width:600px) {
+            font-size: 3rem;
+        }
+
+        &::after {
+            content: '.';
+            color: #004ea9;
+            font-size: 5rem;
+            font-weight: 800;
+            margin-left: -15px;
+
+            @media (max-width:600px) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+// ======= Button page about ==========
+.btn-cont {
+    margin-top: 50px;
+
+    .btn {
+        position: relative;
+        padding: 20px 70px;
+        border: 1px solid white;
+        color: white;
+        text-decoration: none;
+        font-size: em(18px);
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        -webkit-font-smoothing: antialiased;
+
+        &:hover {
+            border: none;
+
+            .line-1 {
+                animation: move1 1500ms infinite ease;
+            }
+
+            .line-2 {
+                animation: move2 1500ms infinite ease;
+            }
+
+            .line-3 {
+                animation: move3 1500ms infinite ease;
+            }
+
+            .line-4 {
+                animation: move4 1500ms infinite ease;
+            }
+        }
+    }
+
+    .line-1 {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        background-color: white;
+        left: 0;
+        bottom: 0;
+    }
+
+    .line-2 {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        background-color: white;
+        left: 0;
+        top: 0;
+    }
+
+    .line-3 {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        background-color: white;
+        right: 0;
+        top: 0;
+    }
+
+    .line-4 {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        background-color: white;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@keyframes move1 {
+    0% {
+        height: 100%;
+        bottom: 0;
+    }
+
+    54% {
+        height: 0;
+        bottom: 100%;
+    }
+
+    55% {
+        height: 0;
+        bottom: 0;
+    }
+
+    100% {
+        height: 100%;
+        bottom: 0;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes move3 {
+    0% {
+        height: 100%;
+        top: 0;
+    }
+
+    54% {
+        height: 0;
+        top: 100%;
+    }
+
+    55% {
+        height: 0;
+        top: 0;
+    }
+
+    100% {
+        height: 100%;
+        top: 0;
+    }
+}
+
+@keyframes move4 {
+    0% {
+        width: 0;
+        right: 0;
+    }
+
+    55% {
+        width: 100%;
+        right: 0;
+    }
+
+    100% {
+        width: 0;
+        right: 100%;
+    }
+}
+
+// ======== Button Home ===========
+
+
+// ======== Button Social =========
+.social {
+    position: relative;
+    z-index: 100;
+
+    h4 {
+        color: $white;
+    }
+
+    ul {
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 35px;
+        margin-left: -8px;
+
+        li {
+            list-style: none;
+
+            a {
+                display: block;
+                position: relative;
+                width: 50px;
+                height: 50px;
+                line-height: 45px;
+                font-size: 37px;
+                text-align: center;
+                text-decoration: none;
+                color: #afafaf;
+                margin: 0 10px;
+                -webkit-transition: .5s;
+                transition: .5s;
+
+                span {
+                    position: absolute;
+                    transition: transform .5s;
+                }
+            }
+        }
+    }
+
+    ul li a span:nth-child(1),
+    ul li a span:nth-child(3) {
+        width: 100%;
+        height: 3px;
+        background: #afafaf;
+    }
+
+    ul li a span:nth-child(1) {
+        top: 0;
+        left: 0;
+        transform-origin: right;
+    }
+
+    ul li a:hover span:nth-child(1) {
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .5s;
+    }
+
+    ul li a span:nth-child(3) {
+        bottom: 0;
+        left: 0;
+        transform-origin: left;
+    }
+
+    ul li a:hover span:nth-child(3) {
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s;
+    }
+
+    ul li a span:nth-child(2),
+    ul li a span:nth-child(4) {
+        width: 3px;
+        height: 100%;
+        background: #afafaf;
+    }
+
+    ul li a span:nth-child(2) {
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        transform-origin: bottom;
+    }
+
+    ul li a:hover span:nth-child(2) {
+        transform: scale(1);
+        transform-origin: top;
+        transition: transform .5s;
+    }
+
+    ul li a span:nth-child(4) {
+        top: 0;
+        right: 0;
+        transform: scale(0);
+        transform-origin: top;
+    }
+
+    ul li a:hover span:nth-child(4) {
+        transform: scale(1);
+        transform-origin: bottom;
+        transition: transform .5s;
+    }
+
+    .linkedin:hover {
+        color: #3b5998;
+    }
+
+    .linkedin:hover span {
+        background: #3b5998;
+    }
+
+    .twitter:hover {
+        color: #1da1f2;
+    }
+
+    .twitter:hover span {
+        background: #1da1f2;
+    }
+
+    .instagram:hover {
+        color: #d6249f;
+    }
+
+    .instagram:hover span {
+        background: #d6249f;
+    }
+
+    .dribbble:hover {
+        color: #ea4c89;
+    }
+
+    .dribbble:hover span {
+        background: #ea4c89;
+    }
+
+    ul li a .twitter {
+        color: #1da1f2;
+    }
+
+    ul li a:hover:nth-child(3) {
+        color: #c32aa3;
+    }
+
+    ul li a:hover:nth-child(4) {
+        color: #dd4b39;
+    }
+}

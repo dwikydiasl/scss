@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap);
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+#header .nav {
+  padding-top: 20px;
+}
+
+#header .nav .nav-left {
+  width: 10%;
+}
+
+#header .nav .nav-left a {
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#header .nav .nav-left a img {
+  max-width: 65px;
+}
+
+#header .nav .nav-left a span {
+  font-size: 3rem;
+  padding-left: 15px;
+  color: #fff;
+}
+
+#header .nav .nav-right {
+  width: 90%;
+}
+
+#header .nav .nav-right .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-top: 10px;
+}
+
+#header .nav .nav-right .menu li {
+  padding-left: 15px;
+}
+
+#header .nav .nav-right .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.scrolled {
+  padding-top: -30;
+  height: 78px;
+  background-color: #111;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+.scrolled .nav .nav-left {
+  margin-top: -10px;
+}
+
+.scrolled .nav .nav-left img {
+  max-width: 45px !important;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+/*# sourceMappingURL=header.css.map */

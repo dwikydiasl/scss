@@ -1,0 +1,72 @@
+@import 'mixin.scss';
+@import 'variable.scss';
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    .nav {
+        padding-top: 20px;
+
+        .nav-left {
+            width: 10%;
+
+            a {
+                text-decoration: none;
+                display: inline-flex;
+
+                img {
+                    max-width: 65px;
+                }
+
+                span {
+                    font-size: 3rem;
+                    padding-left: 15px;
+                    color: $white;
+                }
+            }
+        }
+
+        .nav-right {
+            width: 90%;
+
+            .menu {
+                @include reset-list();
+                display: flex;
+                justify-content: end;
+                padding-top: 10px;
+
+                li {
+                    padding-left: 15px;
+
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.scrolled {
+    padding-top: -30;
+    height: 78px;
+    background-color: #111;
+    transition: 0.7s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 3s;
+
+    .nav {
+        .nav-left {
+            margin-top: -10px;
+
+            img {
+                max-width: 45px !important;
+                transition-duration: 3s;
+            }
+        }
+    }
+}
