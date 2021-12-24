@@ -147,6 +147,12 @@
 }
 
 @media (max-width: 767px) {
+  #header.header.scrolled .nav .nav-right .menu {
+    bottom: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
   #header.header.scrolled .nav .nav-right .menu li {
     display: inline-block;
     margin-left: 15px;

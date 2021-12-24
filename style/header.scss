@@ -129,6 +129,10 @@
                             margin-top: -10px;
                         }
 
+                        @media (max-width:767px) {
+                            bottom: 0 !important;
+                        }
+
                         li {
                             @media (max-width:767px) {
                                 display: inline-block;
