@@ -23,6 +23,7 @@
 
                     img {
                         max-width: 65px;
+                        z-index: 999;
                     }
 
                     span {
@@ -82,7 +83,7 @@
 
         &.scrolled {
             padding-top: -30;
-            height: 78px;
+            height: 100vh;
             background-color: #111;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -92,14 +93,14 @@
             }
 
             @media (max-width:767px) {
-                height: 75px;
+                height: 50px !important;
                 width: 100%;
             }
 
             .nav {
                 @media (max-width:767px) {
                     display: flex;
-                    height: 75px;
+                    height: 45px;
                 }
 
                 .nav-left {
@@ -108,6 +109,20 @@
                     @media (max-width:767px) {
                         height: 75px;
                         width: 15%;
+                    }
+
+                    &::after {
+                        @media (max-width:767px) {
+                            content: '';
+                            background: #111;
+                            height: 63px;
+                            width: 50px;
+                            position: absolute;
+                            left: 9px;
+                            z-index: 99;
+                            border-radius: 0 0 10px 10px;
+                            z-index: 99;
+                        }
                     }
 
                     img {
@@ -126,11 +141,13 @@
                         @media (max-width:767px) {
                             position: relative;
                             text-align: right;
-                            margin-top: -10px;
+                            margin-top: -22px;
+                            margin-right: 10px;
                         }
 
                         @media (max-width:767px) {
                             bottom: 0 !important;
+
                         }
 
                         li {
