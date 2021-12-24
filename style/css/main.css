@@ -145,8 +145,13 @@
 
 #header.header.scrolled .nav .nav-left img {
   max-width: 40px !important;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+}
+
+@media (min-width: 768px) {
+  #header.header.scrolled .nav .nav-left img {
+    -webkit-transition-duration: 3s;
+            transition-duration: 3s;
+  }
 }
 
 @media (max-width: 767px) {
