@@ -127,7 +127,10 @@
 
                     img {
                         max-width: 40px !important;
-                        transition-duration: 3s;
+
+                        @media (min-width:768px) {
+                            transition-duration: 3s;
+                        }
                     }
                 }
 
