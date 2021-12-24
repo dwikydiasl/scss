@@ -43,31 +43,33 @@
   <!-- landing page -->
   <div id="landing-page">
     <div id="header" class="header">
-      <div class="container">
-        <div class="nav">
-          <div class="nav-left">
-            <a href="">
-              <img src="./assets/img/brand.png">
-            </a>
-          </div>
-          <div class="nav-right">
-            <ul class="menu">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
+      <nav>
+        <div class="container">
+          <div class="nav">
+            <div class="nav-left">
+              <a href="">
+                <img src="./assets/img/brand.png">
+              </a>
+            </div>
+            <div class="nav-right">
+              <ul class="menu">
+                <li>
+                  <a href="#"><i class="fa-solid fa-house-user"></i> <span>Home</span></a>
+                </li>
+                <li>
+                  <a href="#about"><i class="fa-solid fa-user"></i> <span>About</span></a>
+                </li>
+                <li>
+                  <a href="#projects"><i class="fa-solid fa-code-fork"></i> <span>Project</span></a>
+                </li>
+                <li>
+                  <a href="#contact"><i class="fa-solid fa-circle-info"></i> <span>Contact</span></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
 
     <!-- Home -->
@@ -313,80 +315,58 @@
             </p>
           </div>
           <div class="body_content">
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <div class="view_all">
-                  <a href="">View all project </a>
-                </div>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
+          
+            <!-- Project card -->
+              <div class="project_card">
+            
+                <article class="postcard dark blue">
+                  <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="assets/img/stockshop.jpg" alt="Image Title" />
+                  </a>
+                  <div class="postcard__text">
+                    <h1 class="postcard__title blue"><a href="#">Stock Shop</a></h1>
+                    <div class="postcard__subtitle small">
+                      <i class="fa-solid fa-store"></i> Online Shop
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                  </div>
+                </article>
+                <article class="postcard dark red">
+                  <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="assets/img/projek5.jpg" alt="Image Title" />	
+                  </a>
+                  <div class="postcard__text">
+                    <h1 class="postcard__title red"><a href="#">Teman Belajar</a></h1>
+                    <div class="postcard__subtitle small">
+                      <i class="fa-solid fa-book-open-reader"></i> Education
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                  </div>
+                </article>
+                <article class="postcard dark green">
+                  <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="assets/img/technolabs.png" alt="Image Title" />
+                  </a>
+                  <div class="postcard__text">
+                    <h1 class="postcard__title green"><a href="#"> Technolabs</a></h1>
+                    <div class="postcard__subtitle small">
+                      <i class="fa-solid fa-building"></i> Company Profil
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                  </div>
+                </article>
+              </div>
+          </div>  
+          
+          <div class="view_all_project">
+            <a href="project.html" class="brk-btn">
+              View all project
+            </a>
+          </div>       
 
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="project_card">
-                    <div class="desc_project">
-                      <h4>
-                        <i class="fa-solid fa-shop"></i> Stock Shop
-                      </h4>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum, repellat alias magni
-                        eligendi mollitia eveniet sunt quia
-                      </p>
-                      <a href="" class="btn_view_project">
-                        View Project
-                      </a>
-                    </div>
-                    <div class="img_project">
-                      <img src="assets/img/stockshop.jpg" class="cover_img">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="project_card">
-                    <div class="desc_project">
-                      <h4>
-                        <i class="fa-solid fa-graduation-cap"></i> Teman Belajar
-                      </h4>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum, repellat alias magni
-                        eligendi mollitia eveniet sunt quia
-                      </p>
-                      <a href="" class="btn_view_project">
-                        View Project
-                      </a>
-                    </div>
-                    <div class="img_project">
-                      <img src="assets/img/projek5.jpg" class="cover_img">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="project_card">
-                    <div class="desc_project">
-                      <h4>
-                        <i class="fa-solid fa-building"></i> Technolabs
-                      </h4>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum, repellat alias magni
-                        eligendi mollitia eveniet sunt quia
-                      </p>
-                      <a href="" class="btn_view_project">
-                        View Project
-                      </a>
-                    </div>
-                    <div class="img_project">
-                      <img src="assets/img/technolabs.png" class="cover_img">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

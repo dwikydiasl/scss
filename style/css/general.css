@@ -1,10 +1,27 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap);
+@media (min-width: 1400px) and (max-width: 1500px) {
+  body .container {
+    max-width: 1260px !important;
+  }
+}
+
+body .content_project {
+  position: relative;
+  z-index: 99;
+}
+
 .section_layout {
   background-color: #010101;
   position: relative;
   z-index: 100;
   min-height: 100vh;
   padding: 80px 0;
+}
+
+@media (max-width: 600px) {
+  .section_layout {
+    padding: 30px 0;
+  }
 }
 
 .section_layout .subtitle_section {
@@ -16,6 +33,7 @@
 @media (max-width: 600px) {
   .section_layout .subtitle_section {
     font-size: 1rem;
+    padding-left: 15px;
   }
 }
 
@@ -28,7 +46,7 @@
 .section_layout .subtitle_section::before {
   content: '';
   height: 100%;
-  width: 10px;
+  width: 5px;
   background: #004ea9;
   position: absolute;
   left: 0;

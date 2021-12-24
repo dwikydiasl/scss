@@ -1,36 +1,42 @@
 //@import url('/fonts/upstate/style.css');
 @import 'themes/upstate';
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
-@import '_breakpoints', '_variables', 'vendor/crfs';
 
 #daintegration {
-    .da_address_search_exclude_state {
-        background-color: transparent !important;
 
-        .da-module-title {
-            @include crfs(52px);
-            color: #fff !important;
-        }
-
-        .da-module-desc {
-            @include crfs(20px);
-            color: #fff !important;
-        }
-
-        .da-underneath-note {
-            display: none !important;
+    .da_property_map,
+    .da_local_schools_ap {
+        .leaflet-container .leaflet-marker-pane img {
+            width: 40px !important;
+            height: auto !important;
         }
     }
 
-    .da_property_history_ap {
-        .da-timeline-vertical {
-            .da-property {
-                .da-property-info {
-                    .da-price {
-                        @media (min-width: 992px) {
-                            flex: 0 0 100% !important;
-                        }
-                    }
+    .da_personal_appraisal_form_ap {
+        label {
+            &.da-btn {
+                @include crfs(18px);
+            }
+        }
+    }
+
+    .da_similar_sold_ap_icon {
+        .da-module-header {
+            &::after {
+                @media (max-width:600px) {
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 70% !important;
+                }
+            }
+        }
+    }
+
+    .da_suburb_sales_statistics-ap {
+        .da-card {
+            .da-card-body {
+                .da-card-value {
+                    @include crfs(52px);
                 }
             }
         }
@@ -48,34 +54,6 @@
         }
     }
 
-    .da_similar_sold_ap_icon {
-        .da-module-header {
-            &::after {
-                @media (max-width:600px) {
-                    transform: translate(-50%, -50%);
-                    left: 50%;
-                    top: 70% !important;
-                }
-            }
-        }
-    }
-
-    .da_personal_appraisal_form_ap {
-        label {
-            &.da-btn {
-                @include crfs(16px);
-            }
-        }
-    }
-
-    .da_property_map,
-    .da_local_schools_ap {
-        .leaflet-container .leaflet-marker-pane img {
-            width: 40px !important;
-            height: auto !important;
-        }
-    }
-
     .da_avm_ap_range {
 
         .da-form-row>.da-col,
@@ -85,22 +63,18 @@
             max-width: 100%;
         }
     }
-}
 
-#stone-seaforth {
-    #daintegration {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .da_address_search_exclude_state {
+        .da-underneath-note {
+            display: none !important;
+        }
     }
 }
 
-#stone-seaforth {
-    #daintegration {
-        .da_cookie_floating {
-            width: 800px !important;
-            bottom: -100% !important;
+#property-report {
+    .da_module {
+        .da-module-wrapper {
+            background-color: transparent !important;
         }
     }
 }
