@@ -48,6 +48,12 @@
   bottom: 0;
 }
 
+@media (max-width: 767px) {
+  #header.header .nav .nav-right .menu {
+    bottom: 30px !important;
+  }
+}
+
 #header.header .nav .nav-right .menu li {
   margin-top: 15px;
 }

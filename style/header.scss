@@ -42,6 +42,9 @@
                     position: absolute;
                     bottom: 0;
 
+                    @media (max-width:767px) {
+                        bottom: 30px !important;
+                    }
 
                     li {
                         margin-top: 15px;
