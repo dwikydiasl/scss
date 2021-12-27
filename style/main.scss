@@ -1347,7 +1347,7 @@ body {
     background: $white;
     bottom: 30px;
     right: 5%;
-    display: none;
+    opacity: 0;
 
     i {
         color: $black;
@@ -1359,6 +1359,7 @@ body {
 
 .scrolled {
     .back_to_top {
-        display: block;
+        opacity: 1;
+        transition-duration: 3s;
     }
 }

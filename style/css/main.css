@@ -2204,7 +2204,7 @@ body .modal-backdrop {
   background: #fff;
   bottom: 30px;
   right: 5%;
-  display: none;
+  opacity: 0;
 }
 
 .back_to_top i {
@@ -2215,6 +2215,8 @@ body .modal-backdrop {
 }
 
 .scrolled .back_to_top {
-  display: block;
+  opacity: 1;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
 }
 /*# sourceMappingURL=main.css.map */
