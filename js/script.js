@@ -53,7 +53,7 @@ nav.find('a').on('click', function () {
 
 // =========== Header scroll ===========
 $(function() {
-  var header = $(".header");
+  var header = $(".front_page");
   
   $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
