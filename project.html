@@ -22,163 +22,246 @@
 </head>
 
 <body class="">
-
+<div class="back_to_home">
+  <a href="index.html">
+    <i class="fa-solid fa-hand-point-left"></i> Back to home
+  </a>
+</div>
 
   <!-- landing page -->
-  <div id="">
-    <div id="header" class="header">
-      <nav>
-        <div class="container ">
-          <div class="nav">
-            <div class="nav-left">
-              <a href="">
-                <img src="./assets/img/brand.png">
-              </a>
-            </div>
-            <div class="nav-right">
-              <ul class="menu">
+  <section id="all_project" class="">
+    <canvas id="snow"></canvas>
+    <div class="container ">
+      <div class="content_project ">
+        <h1 align="center" class="mb-5 title_section"> My All Project</h1>
+        <div id="myBtnContainer">
+          <button class="btn actived" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('company')"> Company Profile</button>
+          <button class="btn" onclick="filterSelection('ecommerce')"> E-Commerce</button>
+          <button class="btn" onclick="filterSelection('education')"> Education</button>
+          <button class="btn" onclick="filterSelection('other')"> Other</button>
+        </div>
+
+        <div class="listing_card">
+          <div class="filterDiv company">
+            <figure class="snip1581"><img src="assets/img/screencapture-dev-spradz-id-2020-03-05-10_57_53.png"
+                alt="profile-sample2" />
+              <figcaption>
+                <!-- <h3 class="title1">The</h3> -->
+                <h3 class="title2">Spardz</h3>
+                <h3 class="title3">Platform</h3>
+              </figcaption><a href="https://spradz.com/"></a>
+            </figure>
+          </div>
+          <div class="filterDiv company">
+            <figure class="snip1581"><img src="assets/img/capital.jpg" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Capital</h3>
+                <h3 class="title3">Company</h3>
+              </figcaption><a href="http://www.capitalfinancial.co.id/"></a>
+            </figure>
+          </div>
+          <div class="filterDiv ecommerce">
+            <figure class="snip1581"><img src="assets/img/screencapture-giladiskon-2020-03-05-11_03_03.png"
+                alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Giladiskon</h3>
+                <h3 class="title3">E-Commerce</h3>
+              </figcaption><a href="https://www.giladiskon.com/"></a>
+            </figure>
+          </div>
+
+          <div class="filterDiv other">
+            <figure class="snip1581"><img src="assets/img/Dashboard.png" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Spradz</h3>
+                <h3 class="title3">Dashboard</h3>
+              </figcaption><a href="#"></a>
+            </figure>
+          </div>
+          <div class="filterDiv company">
+            <figure class="snip1581"><img src="assets/img/darmawan.png" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Darmawan</h3>
+                <h3 class="title3">Company Profil</h3>
+              </figcaption><a href="https://www.darmalaw.id/web/"></a>
+            </figure>
+          </div>
+          <div class="filterDiv company">
+            <figure class="snip1581"><img src="assets/img/Chapter1.jpg" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Chapter 1</h3>
+                <h3 class="title3">Company Profil</h3>
+              </figcaption><a href="#"></a>
+            </figure>
+          </div>
+
+          <div class="filterDiv company">
+            <figure class="snip1581"><img src="assets/img/projek7.jpg" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Weldon</h3>
+                <h3 class="title3">Company Profil</h3>
+              </figcaption><a href="https://www.weldon.co.id/"></a>
+            </figure>
+          </div>
+          <div class="filterDiv other">
+            <figure class="snip1581"><img src="assets/img/Q7.jpg" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Q&</h3>
+                <h3 class="title3">Survey</h3>
+              </figcaption><a href="https://q7survey.com/"></a>
+            </figure>
+          </div>
+          <div class="filterDiv ecommerce">
+            <figure class="snip1581"><img src="assets/img/pickpict.png" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Pickpict</h3>
+                <h3 class="title3">Company Profil</h3>
+              </figcaption><a href="#"></a>
+            </figure>
+          </div>
+
+          <div class="filterDiv education">
+            <figure class="snip1581"><img src="assets/img/projek5.jpg" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Teman Belajar</h3>
+                <h3 class="title3">Company Profil</h3>
+              </figcaption><a href="https://teman-belajar.com/"></a>
+            </figure>
+          </div>
+          <div class="filterDiv company">
+            <figure class="snip1581"><img src="assets/img/screencapture-localhost-giftkita-2020-03-05-09_59_44.png" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Giftkita</h3>
+                <h3 class="title3">Company Profil</h3>
+              </figcaption><a href="#"></a>
+            </figure>
+          </div>
+          <div class="filterDiv company">
+            <figure class="snip1581"><img src="assets/img/screencapture-topdigitalcompanyaward-2020-05-05-09_47_50.png" alt="profile-sample2" />
+              <figcaption>
+                <h3 class="title1"></h3>
+                <h3 class="title2">Top Digital</h3>
+                <h3 class="title3">Company Profil</h3>
+              </figcaption><a href="#"></a>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contact" class="contact section_layout">
+    <div class="container">
+      <div class="content">
+        <div class="header_content">
+          <h1 class="title_section">
+            Contact me
+          </h1>
+          <p class="subtitle_section">
+            Are you enjoying what are you looking at now ? Do you have any project that you would like to talk about?
+            Let's collaborate with me
+          </p>
+        </div>
+        <div class="body_content">
+          <h4><i class="fa-solid fa-envelope-open-text"></i> E-Mail: </h3><br>
+            <h5>
+              diaslaksmana<i class="fa-solid fa-at"></i>gamil.com
+            </h5><br>
+            <div class="social">
+              <h4><i class="fa-solid fa-hashtag"></i> Follow me:</h4>
+              <ul>
                 <li>
-                  <a href="index.html"><i class="fa-solid fa-hand-point-left"></i> <span>Back</span></a>
+                  <a class="twitter" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="instagram" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="linkedin" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dribbble" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa-brands fa-dribbble"></i>
+                  </a>
                 </li>
               </ul>
             </div>
+        </div>
+        <div class="footer_content">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn_get" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span><i class="fa-solid fa-paper-plane"></i> Get in touch.</span><em></em>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Get in touch.</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="mailto:diaslaksmana@gmail.com" method="post" enctype="text/plain">
+                    Name:<br>
+                    <input class="form-control" type="text" name="name"><br>
+                    E-mail:<br>
+                    <input class="form-control" type="text" name="mail"><br>
+                    Comment:<br>
+                    <textarea class="form-control" type="text" name="comment" row="5" size="100"></textarea><br><br>
+                    <input class="btn_modal btn_submit" type="submit" value="Send">
+                    <input class="btn_modal btn_reset" type="reset" value="Reset">
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
-
-    <!-- Home -->
-
-    <section id="home" class="home">
-      <canvas id="snow"></canvas>
-      <div class="container ">
-          <div class="content_project">
-            <div class="row">
-                <div class="col col-sm-6 col-md-4">
-                    <div class="project_card">
-                        <figure class="image-block">
-                            <h1>The Beach</h1>
-                            <img src="assets/img/projek7.jpg" alt="" />
-                            <figcaption>
-                                <h3>
-                                    More Info
-                                </h3>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                <button>
-                                    More Info
-                                </button>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-          </div>        
-      </div>
-    </section>
-
-    
-
-    <section id="contact" class="contact section_layout">
-      <div class="container">
-        <div class="content">
-          <div class="header_content">
-            <h1 class="title_section">
-              Contact me
-            </h1>
-            <p class="subtitle_section">
-              Are you enjoying what are you looking at now ? Do you have any project that you would like to talk about?
-              Let's collaborate with me
-            </p>
-          </div>
-          <div class="body_content">
-            <h4><i class="fa-solid fa-envelope-open-text"></i> E-Mail: </h3><br>
-              <h5>
-                diaslaksmana<i class="fa-solid fa-at"></i>gamil.com
-              </h5><br>
-              <div class="social">
-                <h4><i class="fa-solid fa-hashtag"></i> Follow me:</h4>
-                <ul>
-                  <li>
-                    <a class="twitter" href="#">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <i class="fa-brands fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="instagram" href="#">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <i class="fa-brands fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="linkedin" href="#">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dribbble" href="#">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <i class="fa-brands fa-dribbble"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-          </div>
-          <div class="footer_content">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn_get" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <span><i class="fa-solid fa-paper-plane"></i> Get in touch.</span><em></em>
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Get in touch.</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form action="mailto:diaslaksmana@gmail.com" method="post" enctype="text/plain">
-                      Name:<br>
-                      <input class="form-control" type="text" name="name"><br>
-                      E-mail:<br>
-                      <input class="form-control" type="text" name="mail"><br>
-                      Comment:<br>
-                      <textarea class="form-control" type="text" name="comment" row="5" size="100"></textarea><br><br>
-                      <input class="btn_modal btn_submit" type="submit" value="Send">
-                      <input class="btn_modal btn_reset" type="reset" value="Reset">
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h6 class="text-footer">
-        Copyright ©  <script type="text/javascript">
-          document.write(new Date().getFullYear());
-        </script>
-        <span> Dwiky Dias Laksmana</span> . All rights reserved 
-      </h6>
-    </section>
-
-  </div>
+    <h6 class="text-footer">
+      Copyright © <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script>
+      <span> Dwiky Dias Laksmana</span> . All rights reserved
+    </h6>
+  </section>
 
 
   <!-- Optional JavaScript; choose one of the two! -->
